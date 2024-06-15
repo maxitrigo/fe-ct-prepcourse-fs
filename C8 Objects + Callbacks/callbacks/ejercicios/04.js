@@ -4,6 +4,11 @@ function sumarArray(arrayOfNumbers, cb) {
    // Este resultado debes pasárselo como argumento al callback recibido.
    // NOTA: no debes retornar nada.
    // Tu código:
+
+   const sum = arrayOfNumbers.reduce((accumulator, currentValue) => accumulator + currentValue);
+
+   cb(sum);
+   
 }
 
 module.exports = sumarArray;
